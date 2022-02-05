@@ -1,0 +1,15 @@
+package com.devsuperior.javacompleto.aula059;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String original = "abcde FGHIJ ABC abc DEFG    ";
+		
+		String s01 = original.toLowerCase();
+		
+		System.out.printf("Original: -%s-%n", original);
+		System.out.printf("toLowerCase: -%s-", s01);
+
+	}
+
+}

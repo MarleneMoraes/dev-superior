@@ -1,0 +1,20 @@
+package com.devsuperior.javacompleto.aula024;
+
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("Olá mundo!");
+		System.out.println("Bom dia!");
+		
+		
+		//Escrever o conteúdo de uma variável de algum tipo básico
+		
+		int y = 32;
+		System.out.println(y);
+		
+		//Escrever o conteúdo de uma variável com ponto flutuante
+		double x = 10.35784;
+		
+		System.out.println(x);
+		System.out.printf("%.2f%n", x); //limitar em 2 casas decimais. O %n é uma quebra de linha, \n faz o mesmo
+	}
+}

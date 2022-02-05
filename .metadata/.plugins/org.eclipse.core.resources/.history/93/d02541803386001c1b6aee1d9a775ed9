@@ -1,0 +1,39 @@
+/*
+    Fazer um programa para ler o código de uma peça 1, o número de peças 1, o valor unitário de cada peça 1, o
+    código de uma peça 2, o número de peças 2 e o valor unitário de cada peça 2. Calcule e mostre o valor a ser pago.
+*/
+
+package com.devsuperior.javacompleto.aula030;
+
+import java.util.Scanner;
+
+public class Ex005 {
+	static void ex005(){
+        Scanner scanner = new Scanner (System.in);
+        
+        System.out.println("CAIXA");
+        int codigoPecas = 0, numeroPecas = 0;
+        float valorUnit = 0, valorTotal = 0;
+        
+        for(int count = 0; count < 2; count++) {
+           System.out.print("Digite o código da peça: ");
+           codigoPecas = scanner.nextInt();
+
+           System.out.print("Digite o número de peças: ");
+           numeroPecas = scanner.nextInt();
+
+           System.out.print("Digite o valor unitário da peça: ");
+           valorUnit = scanner.nextFloat();
+           
+           valorTotal += valorPeca(numeroPecas, valorUnit);
+        }
+        
+        System.out.printf("VALOR A PAGAR: R$%.2f\n", valorTotal);
+        
+        scanner.close();
+    }
+    
+    static float valorPeca(int n, float v){
+       return (n*v); 
+    }
+}
