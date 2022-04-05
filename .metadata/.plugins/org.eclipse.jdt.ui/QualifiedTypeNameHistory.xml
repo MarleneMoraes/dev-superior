@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.devsuperior.javacompleto.aula126.entities.Account"/>
+    <fullyQualifiedTypeName name="com.devsuperior.javacompleto.aula126.entities.BusinessAccount"/>
+    <fullyQualifiedTypeName name="com.devsuperior.javacompleto.aula126.entities.SavingsAccount"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="com.devsuperior.javacompleto.aula127.entities.BusinessAccount"/>
+    <fullyQualifiedTypeName name="com.devsuperior.javacompleto.aula128.entities.SavingsAccount"/>
+    <fullyQualifiedTypeName name="com.devsuperior.javacompleto.aula129.entities.Account"/>
+    <fullyQualifiedTypeName name="com.devsuperior.javacompleto.aula129.entities.SavingsAccount"/>
+    <fullyQualifiedTypeName name="com.devsuperior.javacompleto.aula132.entities.BusinessAccount"/>
+    <fullyQualifiedTypeName name="com.devsuperior.javacompleto.aula132.entities.Account"/>
+    <fullyQualifiedTypeName name="com.devsuperior.javacompleto.aula132.entities.SavingsAccount"/>
+    <fullyQualifiedTypeName name="com.devsuperior.javacompleto.aula133.entities.Circle"/>
+    <fullyQualifiedTypeName name="com.devsuperior.javacompleto.aula133.entities.enums.Color"/>
+    <fullyQualifiedTypeName name="com.devsuperior.javacompleto.aula133.entities.Shape"/>
+    <fullyQualifiedTypeName name="com.devsuperior.javacompleto.aula133.entities.Rectangle"/>
     <fullyQualifiedTypeName name="java.util.Locale"/>
+    <fullyQualifiedTypeName name="com.devsuperior.javacompleto.aula130.labs.entities.Employee"/>
+    <fullyQualifiedTypeName name="com.devsuperior.javacompleto.aula130.labs.entities.OutsourcedEmployee"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.devsuperior.javacompleto.aula082.labs.entities.Account"/>
+    <fullyQualifiedTypeName name="com.devsuperior.javacompleto.aula132.entities.Product"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
 </qualifiedTypeNameHistroy>

@@ -28,4 +28,10 @@ public class SavingsAccount  extends Account {
 		balance += balance * interestRate;
 	}
 	
+	//a notação override auxiliará o programador a checar o polimorfismo deste método
+	@Override
+	public void withDraw(double amount) {
+		this.balance -= amount;
+	}
+	
 }
