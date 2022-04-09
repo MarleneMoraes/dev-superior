@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula157.application;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 15: Tratamento de Exceções
+ * AULA 157. Estrutura try-catch
+ */
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 

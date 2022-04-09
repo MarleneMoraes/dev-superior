@@ -1,5 +1,13 @@
 package com.devsuperior.javacompleto.aula158.application;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 15: Tratamento de Exceções
+ * AULA 158. Pilha de chamadas de métodos (stack trace)
+ */
+
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 

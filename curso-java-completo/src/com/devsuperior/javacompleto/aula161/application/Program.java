@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula161.application;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 15: Tratamento de Exceções
+ * AULA 161. Primeira solução - muito ruim
+ */
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -8,7 +15,7 @@ import java.util.Scanner;
 import com.devsuperior.javacompleto.aula161.model.entities.Reservation;
 
 public class Program {
-	//solução muito ruim: essa solução deveria estar na classe Reservation
+	//Essa solução deveria estar na classe Reservation
 	public static void main(String[] args) throws ParseException { //ParseException propaga a exceção que a IDE identificou como possível exceção
 		Scanner sc = new Scanner(System.in);
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");

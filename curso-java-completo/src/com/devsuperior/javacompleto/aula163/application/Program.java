@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula163.application;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 15: Tratamento de Exceções
+ * AULA 163. Terceira solução - boa
+ */
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -9,7 +16,7 @@ import com.devsuperior.javacompleto.aula163.model.entities.Reservation;
 import com.devsuperior.javacompleto.aula163.model.exceptions.DomainException;
 
 public class Program {
-	//solução boa: tratamento de erros
+	//Tratamento de erros
 	public static void main(String[] args) { 
 		Scanner sc = new Scanner(System.in);
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");

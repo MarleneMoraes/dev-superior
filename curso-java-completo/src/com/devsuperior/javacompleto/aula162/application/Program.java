@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula162.application;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 15: Tratamento de Exceções
+ * AULA 162. Segunda solução - ruim
+ */
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -8,7 +15,7 @@ import java.util.Scanner;
 import com.devsuperior.javacompleto.aula162.model.entities.Reservation;
 
 public class Program {
-	//solução ruim: método delegado para Reservation, mas com tratamento de erros limitados
+	// Método delegado para Reservation, mas com tratamento de erros limitados
 	public static void main(String[] args) throws ParseException {
 		Scanner sc = new Scanner(System.in);
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");

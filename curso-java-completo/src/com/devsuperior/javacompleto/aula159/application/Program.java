@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula159.application;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 15: Tratamento de Exceções
+ * AULA 159. Bloco finally
+ */
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;

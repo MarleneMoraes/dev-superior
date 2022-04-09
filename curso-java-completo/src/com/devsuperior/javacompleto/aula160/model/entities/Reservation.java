@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula160.model.entities;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 15: Tratamento de Exceções
+ * AULA 160. Criando exceções personalizadas
+ */
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
