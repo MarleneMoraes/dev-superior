@@ -9,6 +9,9 @@
 # IDEs and editors
 /.idea
 .metadata/*
+.metadata/.log
+.metadata/.plugins
+.metadata/version
 .project
 .classpath
 .c9/
