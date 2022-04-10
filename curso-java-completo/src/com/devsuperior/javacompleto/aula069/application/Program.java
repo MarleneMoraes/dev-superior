@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula069.application;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 8: Introdução à Programação Orientada a Objetos
+ * AULA 69. Finalizando o programa
+ */
+
 import java.util.Locale;
 import java.util.Scanner;
 

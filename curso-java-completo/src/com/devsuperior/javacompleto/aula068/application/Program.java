@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula068.application;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 8: Introdução à Programação Orientada a Objetos
+ * AULA 68. Object e toString
+ */
+
 import java.util.Locale;
 import java.util.Scanner;
 

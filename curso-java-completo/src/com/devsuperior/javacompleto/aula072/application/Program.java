@@ -1,4 +1,10 @@
 package com.devsuperior.javacompleto.aula072.application;
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 8: Introdução à Programação Orientada a Objetos
+ * AULA 72. Membros estáticos - Parte 2
+ */
 
 import java.util.Locale;
 import java.util.Scanner;

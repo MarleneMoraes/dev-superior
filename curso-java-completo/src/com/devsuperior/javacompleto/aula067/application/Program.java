@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula067.application;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 8: Introdução à Programação Orientada a Objetos
+ * AULA 67. Começando a resolver um segundo problema exemplo
+ */
+
 import java.util.Locale;
 import java.util.Scanner;
 

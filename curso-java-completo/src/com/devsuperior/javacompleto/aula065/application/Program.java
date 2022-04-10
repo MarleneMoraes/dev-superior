@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula065.application;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 8: Introdução à Programação Orientada a Objetos
+ * AULA 65: Criando uma classe com três atributos para representar melhor o triângulo
+ */
+
 import java.util.Locale;
 import java.util.Scanner;
 

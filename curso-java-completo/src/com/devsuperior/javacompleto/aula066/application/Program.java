@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula066.application;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 8: Introdução à Programação Orientada a Objetos
+ * AULA 66. Criando um método para obtermos os benefícios de reaproveitamento e delegação
+ */
+
 import java.util.Locale;
 import java.util.Scanner;
 

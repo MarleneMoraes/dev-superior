@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula064;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 8: Introdução à Programação Orientada a Objetos
+ * AULA 64. Resolvendo um problema sem orientação a objetos
+ */
+
 import java.util.Locale;
 import java.util.Scanner;
 

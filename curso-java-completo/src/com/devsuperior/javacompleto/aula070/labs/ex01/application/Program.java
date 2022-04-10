@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula070.labs.ex01.application;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 8: Introdução à Programação Orientada a Objetos
+ * AULA 70. Exercícios de fixação
+ */
+
 import java.util.Locale;
 import java.util.Scanner;
 
