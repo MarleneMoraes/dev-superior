@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula045;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 6: Estruturas repetitivas
+ * AULA 45. Estrutura repetitiva enquanto (while)
+ */
+
 import java.util.Scanner;
 
 public class Main {

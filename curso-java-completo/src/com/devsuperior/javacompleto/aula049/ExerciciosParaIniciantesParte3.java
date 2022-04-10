@@ -9,6 +9,13 @@
 
 package com.devsuperior.javacompleto.aula049;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 6: Estruturas repetitivas
+ * AULA 49. Exercícios para iniciantes - PARTE 3
+ */
+
 import java.util.Locale;
 import java.util.Scanner;
 

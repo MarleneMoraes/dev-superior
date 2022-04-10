@@ -1,5 +1,13 @@
 package com.devsuperior.javacompleto.aula050;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 6: Estruturas repetitivas
+ * AULA 50. Estrutura repetitiva para (for)
+ */
+
+
 import java.util.Scanner;
 
 public class Main {
