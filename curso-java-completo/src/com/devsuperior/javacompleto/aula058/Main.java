@@ -1,8 +1,9 @@
 package com.devsuperior.javacompleto.aula058;
+
 /**
  * 
  * @author Marlene
- * SEÇÃO 8: Introdução à Programação Orientada a Objetos
+ * SEÇÃO 7: Outros tópicos básicos sobre Java
  * AULA 58. Operadores bitwise
  */
 

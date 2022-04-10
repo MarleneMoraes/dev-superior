@@ -3,7 +3,7 @@ package com.devsuperior.javacompleto.aula059;
 /**
  * 
  * @author Marlene
- * SEÇÃO 8: Introdução à Programação Orientada a Objetos
+ * SEÇÃO 7: Outros tópicos básicos sobre Java
  * AULA 59. Funções interessantes para String
  */
 

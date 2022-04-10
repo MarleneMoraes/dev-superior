@@ -3,8 +3,8 @@ package com.devsuperior.javacompleto.aula061;
 /**
  * 
  * @author Marlene
- * SEÇÃO 8: Introdução à Programação Orientada a Objetos
- * AULA 61. Funções (sintaxe)
+ * SEÇÃO 7: Outros tópicos básicos sobre Java
+ * AULA 61: Funções (sintaxe)
  */
 
 import java.util.Locale;
