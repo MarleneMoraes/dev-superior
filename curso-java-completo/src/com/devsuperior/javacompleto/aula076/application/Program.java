@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula076.application;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 9: Construtores, palavra this, sobrecarga, encapsulamento
+ * AULA 76. Construtores
+ */
+
 import java.util.Locale;
 import java.util.Scanner;
 

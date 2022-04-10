@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula081.application;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 9: Construtores, palavra this, sobrecarga, encapsulamento
+ * AULA 81. Modificadores de acesso
+ */
+
 import java.util.Locale;
 import java.util.Scanner;
 
