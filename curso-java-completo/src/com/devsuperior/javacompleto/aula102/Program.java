@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula102;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 11: Tópicos especiais em Java
+ * AULA 102. Trabalhando com datas - Date
+ */
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Instant;

@@ -1,5 +1,13 @@
 package com.devsuperior.javacompleto.aula103;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 11: Tópicos especiais em Java
+ * AULA 103. Manipulando um Date com Calendar
+ */
+
+
 import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.util.Calendar;
