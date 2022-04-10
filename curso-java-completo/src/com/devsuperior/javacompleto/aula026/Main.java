@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula026;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 4: Estrutura sequencial
+ * AULA 26. Entrada de dados em Java - Parte 1
+ */
+
 import java.util.Locale;
 import java.util.Scanner;
 

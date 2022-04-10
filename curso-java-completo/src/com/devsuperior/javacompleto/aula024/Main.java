@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula024;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 4: Estrutura sequencial
+ * AULA 24. Saída de dados em Java
+ */
+
 import java.util.Locale;
 
 public class Main {

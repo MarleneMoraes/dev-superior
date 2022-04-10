@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula028;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 4: Estrutura sequencial
+ * AULA 28. Funções matemáticas em Java
+ */
+
 import java.util.Locale;
 import java.util.Scanner;
 

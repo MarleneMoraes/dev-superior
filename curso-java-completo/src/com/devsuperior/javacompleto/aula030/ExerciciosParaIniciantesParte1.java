@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula030;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 4: Estrutura sequencial
+ * AULA 30. Exercícios para Iniciantes - PARTE 1
+ */
+
 import java.util.Locale;
 import java.util.Scanner;
 

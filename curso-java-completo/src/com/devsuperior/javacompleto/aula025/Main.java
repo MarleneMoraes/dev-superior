@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula025;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 4: Estrutura sequencial
+ * AULA 25. Processamento de dados em Java, Casting
+ */
+
 public class Main {
 
 	public static void main(String[] args) {
