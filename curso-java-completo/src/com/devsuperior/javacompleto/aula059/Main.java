@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula059;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 8: Introdução à Programação Orientada a Objetos
+ * AULA 59. Funções interessantes para String
+ */
+
 public class Main {
 
 	public static void main(String[] args) {

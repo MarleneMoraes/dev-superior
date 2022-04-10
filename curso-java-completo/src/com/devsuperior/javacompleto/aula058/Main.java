@@ -1,4 +1,10 @@
 package com.devsuperior.javacompleto.aula058;
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 8: Introdução à Programação Orientada a Objetos
+ * AULA 58. Operadores bitwise
+ */
 
 import java.util.Scanner;
 
