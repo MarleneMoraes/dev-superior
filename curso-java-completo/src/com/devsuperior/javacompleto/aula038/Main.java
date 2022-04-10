@@ -1,5 +1,13 @@
 package com.devsuperior.javacompleto.aula038;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 5: Estrutura condicional
+ * AULA 38. Sintaxe opcional - operadores de atribuição cumulativa
+ */
+
+
 import java.util.Locale;
 import java.util.Scanner;
 

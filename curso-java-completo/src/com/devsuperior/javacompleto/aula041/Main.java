@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula041;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 5: Estrutura condicional
+ * AULA 41. Escopo e inicialização
+ */
+
 public class Main {
 
 	public static void main(String[] args) {

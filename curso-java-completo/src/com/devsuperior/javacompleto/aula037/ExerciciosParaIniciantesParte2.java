@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula037;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 5: Estrutura condicional
+ * AULA 37. Exercícios para Iniciantes - PARTE 2
+ */
+
 import java.util.Locale;
 import java.util.Scanner;
 

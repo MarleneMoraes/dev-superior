@@ -1,5 +1,13 @@
 package com.devsuperior.javacompleto.aula039;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 5: Estrutura condicional
+ * AULA 39. Sintaxe opcional - switch case
+ */
+
+
 import java.util.Scanner;
 
 public class Main {

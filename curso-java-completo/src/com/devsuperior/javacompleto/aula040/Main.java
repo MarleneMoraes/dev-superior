@@ -1,5 +1,12 @@
 package com.devsuperior.javacompleto.aula040;
 
+/**
+ * 
+ * @author Marlene
+ * SEÇÃO 5: Estrutura condicional
+ * AULA 40. Expressão condicional ternária
+ */
+
 public class Main {
 
 	public static void main(String[] args) {
