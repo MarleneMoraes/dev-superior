@@ -8,9 +8,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.devsuperior.cursospringboot.domain.Category;
+import com.devsuperior.cursospringboot.domain.City;
 import com.devsuperior.cursospringboot.domain.Product;
+import com.devsuperior.cursospringboot.domain.State;
 import com.devsuperior.cursospringboot.repositories.CategoryRepository;
+import com.devsuperior.cursospringboot.repositories.CityRepository;
 import com.devsuperior.cursospringboot.repositories.ProductRepository;
+import com.devsuperior.cursospringboot.repositories.StateRepository;
 
 @SpringBootApplication
 public class CursoSpringBootApplication implements CommandLineRunner {
@@ -20,6 +24,12 @@ public class CursoSpringBootApplication implements CommandLineRunner {
 	
 	@Autowired
 	private ProductRepository productRepository;
+	
+	@Autowired
+	private StateRepository stateRepository;
+	
+	@Autowired
+	private CityRepository cityRepository;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(CursoSpringBootApplication.class, args);
@@ -41,8 +51,23 @@ public class CursoSpringBootApplication implements CommandLineRunner {
 		product2.getCategories().addAll(Arrays.asList(category1, category2));
 		product3.getCategories().addAll(Arrays.asList(category1));
 		
+		
 		categoryRepository.saveAll(Arrays.asList(category1, category2));
 		productRepository.saveAll(Arrays.asList(product1, product2, product3));
+		
+		State state1 = new State(null, "Minas Gerais");
+		State state2 = new State(null, "São Paulo");
+		
+		City city1 = new City(null, "Uberlândia", state1) ;
+		City city2 = new City(null, "São Paulo", state2);
+		City city3 = new City(null, "Campinas", state2);
+		
+		state1.getCities().addAll(Arrays.asList(city1));
+		state2.getCities().addAll(Arrays.asList(city2, city3));
+		
+		stateRepository.saveAll(Arrays.asList(state1, state2));
+		cityRepository.saveAll(Arrays.asList(city1, city2, city3));
+		
 		
 	}
 
