@@ -12,6 +12,7 @@ import com.devsuperior.cursospringboot.domain.Address;
 import com.devsuperior.cursospringboot.domain.Category;
 import com.devsuperior.cursospringboot.domain.City;
 import com.devsuperior.cursospringboot.domain.Client;
+import com.devsuperior.cursospringboot.domain.ItemOrder;
 import com.devsuperior.cursospringboot.domain.Order;
 import com.devsuperior.cursospringboot.domain.Payment;
 import com.devsuperior.cursospringboot.domain.PaymentBill;
@@ -24,6 +25,7 @@ import com.devsuperior.cursospringboot.repositories.AddressRepository;
 import com.devsuperior.cursospringboot.repositories.CategoryRepository;
 import com.devsuperior.cursospringboot.repositories.CityRepository;
 import com.devsuperior.cursospringboot.repositories.ClientRepository;
+import com.devsuperior.cursospringboot.repositories.ItemRepository;
 import com.devsuperior.cursospringboot.repositories.OrderRepository;
 import com.devsuperior.cursospringboot.repositories.PaymentRepository;
 import com.devsuperior.cursospringboot.repositories.ProductRepository;
@@ -55,6 +57,9 @@ public class CursoSpringBootApplication implements CommandLineRunner {
 	
 	@Autowired
 	private OrderRepository orderRepository;
+	
+	@Autowired
+	private ItemRepository itemRepository;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(CursoSpringBootApplication.class, args);
@@ -118,6 +123,19 @@ public class CursoSpringBootApplication implements CommandLineRunner {
 		
 		orderRepository.saveAll(Arrays.asList(order1, order2));
 		paymentRepository.saveAll(Arrays.asList(payment1, payment2));
+		
+		ItemOrder item1 = new ItemOrder(order1, product1, 0.00, 1, 2000.00);
+		ItemOrder item2 = new ItemOrder(order1, product3, 0.00, 2, 80.00);
+		ItemOrder item3 = new ItemOrder(order2, product2, 100.00, 1, 800.00);
+		
+		order1.getItems().addAll(Arrays.asList(item1, item2));
+		order1.getItems().addAll(Arrays.asList(item3));
+		
+		product1.getItems().addAll(Arrays.asList(item1));
+		product2.getItems().addAll(Arrays.asList(item3));
+		product3.getItems().addAll(Arrays.asList(item2));
+		
+		itemRepository.saveAll(Arrays.asList(item1, item2, item3));
 	}
 
 }
