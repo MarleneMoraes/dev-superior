@@ -7,12 +7,17 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.devsuperior.cursospringboot.domain.Address;
 import com.devsuperior.cursospringboot.domain.Category;
 import com.devsuperior.cursospringboot.domain.City;
+import com.devsuperior.cursospringboot.domain.Client;
 import com.devsuperior.cursospringboot.domain.Product;
 import com.devsuperior.cursospringboot.domain.State;
+import com.devsuperior.cursospringboot.domain.enums.TypeClient;
+import com.devsuperior.cursospringboot.repositories.AddressRepository;
 import com.devsuperior.cursospringboot.repositories.CategoryRepository;
 import com.devsuperior.cursospringboot.repositories.CityRepository;
+import com.devsuperior.cursospringboot.repositories.ClientRepository;
 import com.devsuperior.cursospringboot.repositories.ProductRepository;
 import com.devsuperior.cursospringboot.repositories.StateRepository;
 
@@ -30,6 +35,12 @@ public class CursoSpringBootApplication implements CommandLineRunner {
 	
 	@Autowired
 	private CityRepository cityRepository;
+	
+	@Autowired
+	private ClientRepository clientRepository;
+	
+	@Autowired
+	private AddressRepository addressRepository;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(CursoSpringBootApplication.class, args);
@@ -68,7 +79,15 @@ public class CursoSpringBootApplication implements CommandLineRunner {
 		stateRepository.saveAll(Arrays.asList(state1, state2));
 		cityRepository.saveAll(Arrays.asList(city1, city2, city3));
 		
+		Client client1 = new Client(null, "Maria Silva", "maria@gmail.com", "36378912377", TypeClient.PESSOAFISICA); 
+		client1.getTelefones().addAll(Arrays.asList("27363323", "93838393"));
 		
+		Address address1 = new Address(null, "Rua Flores", "300", "apto 303", "Jardim", "38220834", client1, city1);
+		Address address2 = new Address(null, "Av. Matos", "105", "Sala 800", "Centro", "38777012", client1, city2);
+		client1.getAddress().addAll(Arrays.asList(address1, address2));
+		
+		clientRepository.saveAll(Arrays.asList(client1));
+		addressRepository.saveAll(Arrays.asList(address1, address2));
 	}
 
 }
