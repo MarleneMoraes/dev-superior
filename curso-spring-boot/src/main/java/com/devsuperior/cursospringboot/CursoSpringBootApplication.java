@@ -1,5 +1,6 @@
 package com.devsuperior.cursospringboot;
 
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,13 +12,20 @@ import com.devsuperior.cursospringboot.domain.Address;
 import com.devsuperior.cursospringboot.domain.Category;
 import com.devsuperior.cursospringboot.domain.City;
 import com.devsuperior.cursospringboot.domain.Client;
+import com.devsuperior.cursospringboot.domain.Order;
+import com.devsuperior.cursospringboot.domain.Payment;
+import com.devsuperior.cursospringboot.domain.PaymentBill;
+import com.devsuperior.cursospringboot.domain.PaymentCard;
 import com.devsuperior.cursospringboot.domain.Product;
 import com.devsuperior.cursospringboot.domain.State;
+import com.devsuperior.cursospringboot.domain.enums.StatusPayment;
 import com.devsuperior.cursospringboot.domain.enums.TypeClient;
 import com.devsuperior.cursospringboot.repositories.AddressRepository;
 import com.devsuperior.cursospringboot.repositories.CategoryRepository;
 import com.devsuperior.cursospringboot.repositories.CityRepository;
 import com.devsuperior.cursospringboot.repositories.ClientRepository;
+import com.devsuperior.cursospringboot.repositories.OrderRepository;
+import com.devsuperior.cursospringboot.repositories.PaymentRepository;
 import com.devsuperior.cursospringboot.repositories.ProductRepository;
 import com.devsuperior.cursospringboot.repositories.StateRepository;
 
@@ -41,6 +49,12 @@ public class CursoSpringBootApplication implements CommandLineRunner {
 	
 	@Autowired
 	private AddressRepository addressRepository;
+	
+	@Autowired
+	private PaymentRepository paymentRepository;
+	
+	@Autowired
+	private OrderRepository orderRepository;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(CursoSpringBootApplication.class, args);
@@ -79,8 +93,8 @@ public class CursoSpringBootApplication implements CommandLineRunner {
 		stateRepository.saveAll(Arrays.asList(state1, state2));
 		cityRepository.saveAll(Arrays.asList(city1, city2, city3));
 		
-		Client client1 = new Client(null, "Maria Silva", "maria@gmail.com", "36378912377", TypeClient.PESSOAFISICA); 
-		client1.getTelefones().addAll(Arrays.asList("27363323", "93838393"));
+		Client client1 = new Client(null, "Maria Silva", "maria@gmail.com", "36378912377", TypeClient.NATURALPERSON); 
+		client1.getTelephones().addAll(Arrays.asList("27363323", "93838393"));
 		
 		Address address1 = new Address(null, "Rua Flores", "300", "apto 303", "Jardim", "38220834", client1, city1);
 		Address address2 = new Address(null, "Av. Matos", "105", "Sala 800", "Centro", "38777012", client1, city2);
@@ -88,6 +102,22 @@ public class CursoSpringBootApplication implements CommandLineRunner {
 		
 		clientRepository.saveAll(Arrays.asList(client1));
 		addressRepository.saveAll(Arrays.asList(address1, address2));
+
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm");
+		
+		Order order1 = new Order(null, sdf.parse("30/09/2017 10:32"), client1, address1);
+		Order order2 = new Order(null, sdf.parse("10/10/20147 19:35"), client1, address2);
+		
+		Payment payment1 = new PaymentCard(null, StatusPayment.PAID, order1, 6);
+		order1.setPayment(payment1);
+		
+		Payment payment2 = new PaymentBill(null, StatusPayment.PENDING, order2, sdf.parse("20/10/20147 00:00"), null);
+		order2.setPayment(payment2);
+		
+		client1.getOrder().addAll(Arrays.asList(order1, order2));
+		
+		orderRepository.saveAll(Arrays.asList(order1, order2));
+		paymentRepository.saveAll(Arrays.asList(payment1, payment2));
 	}
 
 }

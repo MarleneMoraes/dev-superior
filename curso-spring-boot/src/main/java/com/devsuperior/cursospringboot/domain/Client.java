@@ -31,12 +31,15 @@ public class Client implements Serializable {
 	private Integer type;
 	
 	@JsonManagedReference
-	@OneToMany(mappedBy="client")
+	@OneToMany(mappedBy = "client")
 	private List<Address> address = new ArrayList<>();
 	
 	@ElementCollection
-	@CollectionTable(name="TELEFONE")
-	private Set<String> telefones = new HashSet<>();
+	@CollectionTable(name = "TELEFONE")
+	private Set<String> telephones = new HashSet<>();
+	
+	@OneToMany(mappedBy = "client")
+	private List<Order> order = new ArrayList<>(); 
 
 	public Client() { }
 
@@ -96,19 +99,27 @@ public class Client implements Serializable {
 		this.address = address;
 	}
 
-	public Set<String> getTelefones() {
-		return telefones;
+	public Set<String> getTelephones() {
+		return telephones;
 	}
 
-	public void setTelefones(Set<String> telefones) {
-		this.telefones = telefones;
+	public void setTelephones(Set<String> telephones) {
+		this.telephones = telephones;
 	}
 
+	public List<Order> getOrder() {
+		return order;
+	}
+	
+	public void setOrder(List<Order> order) {
+		this.order = order;
+	}
+	
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
 	}
-
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -120,7 +131,5 @@ public class Client implements Serializable {
 		Client other = (Client) obj;
 		return Objects.equals(id, other.id);
 	}
-	
-	
 	
 }

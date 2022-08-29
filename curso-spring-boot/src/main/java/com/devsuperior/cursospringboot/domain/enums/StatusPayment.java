@@ -1,14 +1,14 @@
 package com.devsuperior.cursospringboot.domain.enums;
 
-public enum TypeClient {
+public enum StatusPayment {
+	PENDING(1, "Pending"), 
+	PAID(2, "Paid"),
+	CANCELED (3, "Canceled");
 	
-	NATURALPERSON(1, "Natural Person"), 
-	LEGALPERSON(2, "Legal Person");
-
 	private int code;
 	private String description;
 	
-	private TypeClient(int code, String description) {
+	private StatusPayment(int code, String description) {
 		this.code = code;
 		this.description = description;
 	}
@@ -21,21 +21,19 @@ public enum TypeClient {
 		return description;
 	}
 
-	public static TypeClient toEnum(Integer code) {
+	public static StatusPayment toEnum(Integer code) {
 		
 		if(code == null)
 			return null;
 		
-		for (TypeClient t : TypeClient.values()) {
-			if (code.equals(t.getCode())) {
-				return t;
-			}
+		for (StatusPayment s : StatusPayment.values()) {
+			
+			if (code.equals(s.getCode())) 
+				return s;
+			
 		}
 		
 		throw new IllegalArgumentException("Id Inválido: " + code);
 					
 	}
-	
-	
-	
 }
