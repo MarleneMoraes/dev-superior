@@ -1,17 +1,17 @@
-package com.devsuperior.javacompleto.aula096.labs.application;
+package com.devsuperior.javacompleto.aula099.labs.application;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
-import com.devsuperior.javacompleto.aula096.labs.entities.Employee;
+import com.devsuperior.javacompleto.aula099.labs.entities.Employee;
 
 /**
  * 
  * @author Marlene 
- * SEÇÃO 10: Comportamento de Memória, arrays, listas 
- * AULA 96 - Exercício proposto
+ * SECAO 10: Comportamento de Memï¿½ria, arrays, listas 
+ * AULA 99 - Exercï¿½cio proposto
  */
 
 public class Program {

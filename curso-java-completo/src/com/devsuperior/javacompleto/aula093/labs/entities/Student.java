@@ -1,4 +1,4 @@
-package com.devsuperior.javacompleto.aula091.labs.entities;
+package com.devsuperior.javacompleto.aula093.labs.entities;
 
 public class Student {
 	private String name;

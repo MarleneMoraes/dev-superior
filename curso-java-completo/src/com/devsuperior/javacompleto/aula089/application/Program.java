@@ -1,15 +1,15 @@
-package com.devsuperior.javacompleto.aula090.application;
+package com.devsuperior.javacompleto.aula089.application;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-import com.devsuperior.javacompleto.aula090.entities.Product;
+import com.devsuperior.javacompleto.aula089.entities.Product;
 
 /**
  * 
  * @author Marlene 
- * SEÇÃO 10: Comportamento de Memória, arrays, listas 
- * AULA 90.Vetores - Parte 2
+ * SEï¿½ï¿½O 10: Comportamento de Memï¿½ria, arrays, listas 
+ * AULA 89.Vetores - Parte 2
  */
 
 public class Program {
@@ -19,7 +19,7 @@ public class Program {
 		
 		int n = sc.nextInt();
 		
-		//Vetor de tipo referência
+		//Vetor de tipo referï¿½ncia
 		Product[] vect = new Product[n];
 		
 		for(int i = 0; i < vect.length; i++) {

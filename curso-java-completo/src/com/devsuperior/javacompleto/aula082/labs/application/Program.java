@@ -3,8 +3,8 @@ package com.devsuperior.javacompleto.aula082.labs.application;
 /**
  * 
  * @author Marlene
- * SEÇÃO 9: Construtores, palavra this, sobrecarga, encapsulamento
- * AULA 82. Exercicio de fixação
+ * SECAO 9: Construtores, palavra this, sobrecarga, encapsulamento
+ * AULA 82. Exercicio de fixacao
  */
 
 import java.util.Locale;

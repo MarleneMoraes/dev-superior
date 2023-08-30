@@ -1,10 +1,10 @@
-package com.devsuperior.javacompleto.aula102;
+package com.devsuperior.javacompleto.aula115;
 
 /**
  * 
  * @author Marlene
- * SEÇÃO 11: Tópicos especiais em Java
- * AULA 102. Trabalhando com datas - Date
+ * SECAO 11: Topicos especiais em Java: data-hora
+ * AULA 115. Trabalhando com datas - Date
  */
 
 import java.text.ParseException;
@@ -29,7 +29,7 @@ public class Program {
 		System.out.println(y2);
 		System.out.println(y3);
 		
-		//Para formatar as datas como escreve, utiliza-se o método format
+		//Para formatar as datas como escreve, utiliza-se o mï¿½todo format
 		System.out.println("y1: " + sdf1.format(y1));
 		System.out.println("y2: " + sdf2.format(y2));
 		
@@ -39,7 +39,7 @@ public class Program {
 		Date x2 = new Date(System.currentTimeMillis()); //intante do sistema utilizado, convertido em milissegundos
 		System.out.println("x2: " + sdf2.format(x2));
 		
-		Date x3 = new Date(0L); //intante do sistema utilizado. No caso do Brasil, é 3hs antes do formato que o java adota (UTC)
+		Date x3 = new Date(0L); //intante do sistema utilizado. No caso do Brasil, ï¿½ 3hs antes do formato que o java adota (UTC)
 		System.out.println("x3: " + sdf2.format(x3)); //imprime 3hs antes do formato do Java
 		
 		System.out.println("------------------------------");

@@ -1,15 +1,15 @@
-package com.devsuperior.javacompleto.aula091.labs.application;
+package com.devsuperior.javacompleto.aula093.labs.application;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-import com.devsuperior.javacompleto.aula091.labs.entities.Student;
+import com.devsuperior.javacompleto.aula093.labs.entities.Student;
 
 /**
  * 
  * @author Marlene 
- * SEÇÃO 10: Comportamento de Memória, arrays, listas 
- * AULA 91.Exercício de fixação
+ * SECAO 10: Comportamento de Memoria, arrays, listas 
+ * AULA 93.Desafio sobre vetores (pensionato)
  */
 
 public class Program {

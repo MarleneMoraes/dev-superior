@@ -1,4 +1,4 @@
-package com.devsuperior.javacompleto.aula089;
+package com.devsuperior.javacompleto.aula088;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -6,8 +6,8 @@ import java.util.Scanner;
 /**
  * 
  * @author Marlene 
- * SEÇÃO 10: Comportamento de Memória, arrays, listas 
- * AULA 89.Vetores - Parte 1
+ * SECAO 10: Comportamento de Memoria, arrays, listas 
+ * AULA 88.Vetores - Parte 1
  */
 
 public class Program {

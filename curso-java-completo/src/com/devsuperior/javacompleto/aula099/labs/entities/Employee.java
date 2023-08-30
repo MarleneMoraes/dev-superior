@@ -1,4 +1,4 @@
-package com.devsuperior.javacompleto.aula096.labs.entities;
+package com.devsuperior.javacompleto.aula099.labs.entities;
 
 public class Employee {
 	private Integer id;

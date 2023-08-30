@@ -1,72 +1,41 @@
 package com.devsuperior.javacompleto.aula095;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
-
 /**
  * 
  * @author Marlene 
- * SEÇÃO 10: Comportamento de Memória, arrays, listas 
- * AULA 94 e 95 . Listas
+ * SECAO 10: Comportamento de Memï¿½ria, arrays, listas 
+ * AULA 95. Boxing, unboxing e wrapper classes
  */
 
+
 public class Program {
-
+	
 	public static void main(String[] args) {
-		//Não é permitido instanciar Listas, pois esta é uma interface.
-		//List x = new List(); //dará erro
+		//Boxing
+		int x = 20;
 		
-		//Lista utiliza a Wrapper Class ao declarar os tipos
-		List<String> list = new ArrayList<>(); //ArrayList é uma classe otimizada, que pode ser instanciada
+		Object obj = x;
 		
-		list.add("Maria");
-		list.add("Alex");
-		list.add("Bob");
-		list.add("Anna");
+		System.out.println(obj); //20
 		
-		//Adicionar um elemento em uma posição específica
-		list.add(2, "Marco");
+		//Unboxing
+		int y = (int) obj;
 		
-		for (String names : list) {
-			System.out.print(names + " ");
-		}
+		/*
+		 * Wrapper classes: 
+		 * utilizaï¿½ï¿½o das classes dos tipos primitivos sem utilizaï¿½ï¿½o de casting
+		 * 
+		 * Muito utilizado em Sistemas de Informaï¿½ï¿½o, pois aceita valores nulos
+		 */
+		Integer i = x;
 		
-		System.out.println();
+		y = i;
 		
-		//Tamanho da lista
-		System.out.println(list.size());
+		y = i * 2;
 		
-		//Encontrar posição dos elementos
-		System.out.println("Index of Bob: " + list.indexOf("Bob"));
-		System.out.println("Index of Jonas: " + list.indexOf("Jonas")); //Caso não exista, a lista retornará o valor -1
-		
-		//Filtrar lista com as condições informadas na função lambda (predicado)
-		List<String> result = list.stream().filter(x -> x.charAt(0) == 'A').collect(Collectors.toList());
-		
-		for(String x : result) {
-			System.out.print(x + " ");
-		}
-		
-		System.out.println();
-		
-		//Imprimir apenas o primeiro elemento da lista filtrada.
-		String name = list.stream().filter(x -> x.charAt(0) == 'A').findFirst().orElse(null);
-		System.out.println(name); //Alex
-		
-		name = list.stream().filter(x -> x.charAt(0) == 'J').findFirst().orElse(null);
-		System.out.println(name); //null
-		
-		//Remover um valor
-		list.remove("Anna"); //compara com os valores da lista
-		list.remove(1); //remove o elemento da posição indicada
-		list.removeIf(x -> x.charAt(0) == 'M'); //remove o elemento com as condições informadas no predicado
+		System.out.println(y);
 		
 		
-		for (String names : list) {
-			System.out.print(names + " ");
-		}
-
 	}
-
+	
 }

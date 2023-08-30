@@ -1,10 +1,10 @@
-package com.devsuperior.javacompleto.aula093;
+package com.devsuperior.javacompleto.aula096;
 
 /**
  * 
  * @author Marlene 
- * SEÇÃO 10: Comportamento de Memória, arrays, listas 
- * AULA 93. Laço for each
+ * SECAO 10: Comportamento de Memoria, arrays, listas 
+ * AULA 96. Laco for each
  */
 
 public class Program {
@@ -12,12 +12,12 @@ public class Program {
 	public static void main(String[] args) {
 		String[] vect = new String[] { "Maria", "Bob", "Alex" };
 		
-		//Laço For
+		//Laï¿½o For
 		for (int i = 0; i < vect.length; i++) {
 			System.out.println(vect[i]);
 		}
 		
-		//Laço For Each: para cada elemento obj, faça
+		//Laï¿½o For Each: para cada elemento obj, faï¿½a
 		
 		for (String obj : vect) {
 			System.out.println(obj);
