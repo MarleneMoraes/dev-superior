@@ -10,7 +10,7 @@ import com.devsuperior.javacompleto.aula247.labs.entities.User;
  * 
  * @author Marlene 
  * SECAO 19: Generics, Set, Map 
- * AULA 246. Exercicio Resolvido
+ * AULA 247. Exercicio Resolvido
  */
 
 public class Program {

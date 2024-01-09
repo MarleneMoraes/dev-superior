@@ -4,7 +4,7 @@ package com.devsuperior.javacompleto.aula162.labs.application;
  * 
  * @author Marlene
  * SECAO 14: Heranca e polimorfismo
- * AULA 162. Exerc�cio de fixacao 
+ * AULA 162. Exercicio de fixacao 
  */
 
 
