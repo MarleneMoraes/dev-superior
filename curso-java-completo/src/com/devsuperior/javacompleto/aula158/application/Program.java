@@ -1,50 +1,24 @@
 package com.devsuperior.javacompleto.aula158.application;
 
-/**
- * 
- * @author Marlene
- * SEÇÃO 15: Tratamento de Exceções
- * AULA 158. Pilha de chamadas de métodos (stack trace)
- */
-
-
-import java.util.InputMismatchException;
-import java.util.Scanner;
+import com.devsuperior.javacompleto.aula158.entities.Account;
+import com.devsuperior.javacompleto.aula158.entities.BusinessAccount;
+import com.devsuperior.javacompleto.aula158.entities.SavingsAccount;
 
 public class Program {
 
 	public static void main(String[] args) {
-		method1();
-		System.out.println("End of program");
+
+		Account aacc = new Account(1001, "Alex", 1000.0);
+		aacc.withDraw(200.0);
+		System.out.println(aacc.getBalance());
+
+		Account macc = new SavingsAccount(1002, "Maria", 1000.0, 0.01);
+		macc.withDraw(200.0);
+		System.out.println(macc.getBalance());
 		
-	}
-	
-	public static void method1() {
-		System.out.println("***METHOD1 START***");
-		method2();
-		System.out.println("***METHOD1 END***");
-	}
-	
-	public static void method2() {
-		System.out.println("***METHOD2 START***");
-		Scanner sc = new Scanner(System.in);
-		
-		try {
-			String[] vector = sc.nextLine().split(" ");
-			int position = sc.nextInt();
-			System.out.println(vector[position]);
-		} 
-		catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println("Invalid position!");
-			e.printStackTrace(); //sequência de chamadas que ocorreu o erro
-			sc.next();
-		} 
-		catch (InputMismatchException e) {
-			System.out.println("Input error");
-		}
-		
-		sc.close();
-		System.out.println("***METHOD2 END***");
+		Account bacc = new BusinessAccount(1003, "Bob", 1000.0, 500.0);
+		bacc.withDraw(200.0);
+		System.out.println(bacc.getBalance());
 	}
 
 }
