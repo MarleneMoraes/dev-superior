@@ -1,4 +1,4 @@
-package com.devsuperior.javacompleto.aula205.application;
+package com.devsuperior.javacompleto.aula218.application;
 
 import java.io.File;
 import java.util.Scanner;
@@ -6,8 +6,8 @@ import java.util.Scanner;
 /**
  * 
  * @author Marlene 
- * SEÇÃO 17: Trabalhando com arquivos 
- * AULA 205. Manipulando pastas com File
+ * SEï¿½ï¿½O 17: Trabalhando com arquivos 
+ * AULA 218. Manipulando pastas com File
  */
 
 public class Program {

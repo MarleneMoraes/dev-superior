@@ -1,10 +1,10 @@
-package com.devsuperior.javacompleto.aula202.application;
+package com.devsuperior.javacompleto.aula215.application;
 
 /**
  * 
  * @author Marlene
- * SEÇÃO 17: Trabalhando com arquivos
- * AULA 202. FileReader e BufferedReader
+ * SEï¿½ï¿½O 17: Trabalhando com arquivos
+ * AULA 215. FileReader e BufferedReader
  */
 
 import java.io.BufferedReader;

@@ -1,4 +1,4 @@
-package com.devsuperior.javacompleto.aula204.application;
+package com.devsuperior.javacompleto.aula217.application;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -7,8 +7,8 @@ import java.io.IOException;
 /**
  * 
  * @author Marlene
- * SEÇÃO 17: Trabalhando com arquivos
- * AULA 204. FileWriter e Buffered Writer
+ * SEï¿½ï¿½O 17: Trabalhando com arquivos
+ * AULA 217. FileWriter e Buffered Writer
  */
 
 public class Program {
@@ -18,7 +18,7 @@ public class Program {
 		String path = "c:\\temp\\out.txt";
 		
 		try (BufferedWriter bw = new BufferedWriter(new FileWriter(path))){
-		// try (BufferedWriter bw = new BufferedWriter(new FileWriter(path,true))){    // caso exista, criará novas linhas 
+		// try (BufferedWriter bw = new BufferedWriter(new FileWriter(path,true))){    // caso exista, criarï¿½ novas linhas 
 			for(String line: lines) {
 				bw.write(line);
 				bw.newLine();

@@ -1,10 +1,10 @@
-package com.devsuperior.javacompleto.aula201.application;
+package com.devsuperior.javacompleto.aula214.application;
 
 /**
  * 
  * @author Marlene
- * SEÇÃO 17: Trabalhando com arquivos
- * AULA 201. Lendo arquivo texto com classes File e Scanner
+ * SEï¿½ï¿½O 17: Trabalhando com arquivos
+ * AULA 214. Lendo arquivo texto com classes File e Scanner
  */
 
 import java.io.File;
@@ -13,12 +13,12 @@ import java.util.Scanner;
 
 public class Program {
 	public static void main(String[] args) { 
-		//Objeto que encapsula as operações do file
+		//Objeto que encapsula as operaï¿½ï¿½es do file
 		File file = new File("c:\\temp\\in.txt");
 		
 		//Instanciar o Scanner a partir do file
 		Scanner sc = null;
-		//Tentativa de abrir o arquivo pode gerar uma exceção do tipo IOException
+		//Tentativa de abrir o arquivo pode gerar uma exceï¿½ï¿½o do tipo IOException
 		try {
 			sc = new Scanner(file);
 			
@@ -31,7 +31,7 @@ public class Program {
 		}
 		finally {
 			if (sc != null) {
-				sc.close(); //boas práticas
+				sc.close(); //boas prï¿½ticas
 			}
 		}
 		

@@ -1,4 +1,4 @@
-package com.devsuperior.javacompleto.aula206.application;
+package com.devsuperior.javacompleto.aula219.application;
 
 import java.io.File;
 import java.util.Scanner;
@@ -6,8 +6,8 @@ import java.util.Scanner;
 /**
  * 
  * @author Marlene 
- * SEÇÃO 17: Trabalhando com arquivos 
- * AULA 206. Informações do caminho do arquivo
+ * SEï¿½ï¿½O 17: Trabalhando com arquivos 
+ * AULA 219. Informacoes do caminho do arquivo
  */
 
 public class Program {
