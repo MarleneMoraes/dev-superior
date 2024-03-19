@@ -20,9 +20,4 @@
 *.rar
 
 # Eclipse
-.metadata/.mylyn/*
-.metadata/.plugins/*
-.metadata/.bak_0.log
-.metadata/.lock
-.metadata/.log
-.metadata/version.ini
+*/.metadata/*
