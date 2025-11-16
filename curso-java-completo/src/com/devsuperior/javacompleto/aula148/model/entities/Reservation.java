@@ -1,4 +1,4 @@
-package com.devsuperior.javacompleto.aula175.model.entities;
+package com.devsuperior.javacompleto.aula148.model.entities;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -36,24 +36,13 @@ public class Reservation {
 	}
 
 	public long duration() {
-		long diff = checkout.getTime() - checkin.getTime(); 
+		long diff = checkout.getTime() - checkin.getTime();
 		return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
 	}
 	
-	public String updateDates(Date checkin, Date checkout) {
-		Date now = new Date();
-		if (checkin.before(now) || checkout.before(now)) {
-			return "Reservation dates for update must be future dates";
-		} 
-		
-		if (!checkout.after(checkin)) {
-			return "Check-out date must be after check-in date";
-		}
-		
+	public void updateDates(Date checkin, Date checkout) {
 		this.checkin = checkin;
 		this.checkout = checkout;
-		
-		return null; //n�o deu erros
 	}
 	
 	@Override

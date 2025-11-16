@@ -1,10 +1,10 @@
-package com.devsuperior.javacompleto.aula171.application;
+package com.devsuperior.javacompleto.aula145;
 
 /**
  * 
  * @author Marlene
- * SECAO 15: Tratamento de Excecoes
- * AULA 171. Pilha de chamadas de metodos (stack trace)
+ * SECAO 14: Tratamento de Excecoes
+ * AULA 145. Pilha de chamadas de metodos (stack trace)
  */
 
 
@@ -36,7 +36,7 @@ public class Program {
 		} 
 		catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println("Invalid position!");
-			e.printStackTrace(); //sequ�ncia de chamadas que ocorreu o erro
+			e.printStackTrace(); //sequencia de chamadas que gerou a excecao
 			sc.next();
 		} 
 		catch (InputMismatchException e) {

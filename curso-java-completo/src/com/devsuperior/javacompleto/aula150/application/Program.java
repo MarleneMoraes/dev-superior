@@ -1,10 +1,10 @@
-package com.devsuperior.javacompleto.aula176.application;
+package com.devsuperior.javacompleto.aula150.application;
 
 /**
  * 
  * @author Marlene
- * SE��O 15: Tratamento de Excecoes
- * AULA 176. Terceira solucao - boa
+ * SECAO 14: Tratamento de Excecoes
+ * AULA 150. Terceira solucao - boa
  */
 
 import java.text.ParseException;
@@ -12,8 +12,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-import com.devsuperior.javacompleto.aula176.model.entities.Reservation;
-import com.devsuperior.javacompleto.aula176.model.exceptions.DomainException;
+import com.devsuperior.javacompleto.aula150.model.entities.Reservation;
+import com.devsuperior.javacompleto.aula150.model.exceptions.DomainException;
 
 public class Program {
 	//Tratamento de erros
@@ -50,7 +50,7 @@ public class Program {
 		catch (DomainException e) {
 			System.out.println("Error in reservation: " + e.getMessage());
 		}
-		catch (RuntimeException e) {
+		catch (RuntimeException e) { // excecao possui uma estrutura de heranca e upcasting
 			System.out.println("Unexpected error");
 		}
 		sc.close();

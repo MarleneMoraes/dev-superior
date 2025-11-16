@@ -1,10 +1,10 @@
-package com.devsuperior.javacompleto.aula170.application;
+package com.devsuperior.javacompleto.aula144;
 
 /**
  * 
  * @author Marlene
- * SECAO 15: Tratamento de Excecoes
- * AULA 170. Estrutura try-catch
+ * SECAO 14: Tratamento de Excecoes
+ * AULA 144. Estrutura try-catch
  */
 
 import java.util.InputMismatchException;

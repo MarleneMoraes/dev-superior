@@ -1,10 +1,10 @@
-package com.devsuperior.javacompleto.aula175.application;
+package com.devsuperior.javacompleto.aula148.application;
 
 /**
  * 
  * @author Marlene
- * SECAO 15: Tratamento de Exce��es
- * AULA 175. Segunda solucao - ruim
+ * SECAO 14: Tratamento de Excecoes
+ * AULA 148. Primeira solucao - muito ruim
  */
 
 import java.text.ParseException;
@@ -12,11 +12,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-import com.devsuperior.javacompleto.aula175.model.entities.Reservation;
+import com.devsuperior.javacompleto.aula148.model.entities.Reservation;
 
 public class Program {
-	// M�todo delegado para Reservation, mas com tratamento de erros limitados
-	public static void main(String[] args) throws ParseException {
+	//Essa solucao deveria estar na classe Reservation
+	public static void main(String[] args) throws ParseException { // ParseException propaga a excecao que a IDE identificou como possivel excecao
 		Scanner sc = new Scanner(System.in);
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		
@@ -40,12 +40,13 @@ public class Program {
 			System.out.println("Check-out date (dd/MM/yyyy): ");
 			checkout = sdf.parse(sc.next());
 			
-			
-			String error = reservation.updateDates(checkin, checkout); 
-			
-			if(error != null) {
-				System.out.println("Error in reservation: " + error);
+			Date now = new Date();
+			if (checkin.before(now) || checkout.before(now)) {
+				System.out.println("Error in reservation: Reservation dates for update must be future dates");
+			} else if (!checkout.after(checkin)) {
+				System.out.println("Error in reservation: Check-out date must be after check-in date");
 			} else {
+				reservation.updateDates(checkin, checkout);
 				System.out.println("Reservation: " + reservation);
 			}
 		}

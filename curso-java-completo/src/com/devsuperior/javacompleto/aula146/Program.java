@@ -1,10 +1,10 @@
-package com.devsuperior.javacompleto.aula172.application;
+package com.devsuperior.javacompleto.aula146;
 
 /**
  * 
  * @author Marlene
- * SECAO 15: Tratamento de Excecoes
- * AULA 172. Bloco finally
+ * SECAO 14: Tratamento de Excecoes
+ * AULA 146. Bloco finally
  */
 
 import java.io.File;
@@ -16,21 +16,19 @@ public class Program {
 	public static void main(String[] args) {
 		File file = new File("C:\\temp\\in.txt");
 		Scanner sc = null;
-		
+
 		try {
 			sc = new Scanner(file);
-			while(sc.hasNextLine()) {
+			while (sc.hasNextLine()) {
 				System.out.println(sc.nextLine());
 			}
-		} 
-		catch (FileNotFoundException e) {
+		} catch (FileNotFoundException e) {
 			System.out.println("Error opening file: " + e.getMessage());
-		} 
-		finally {
-			if (sc != null) sc.close();
-			
+		} finally { // independente de execucao de excecao, ele sera executado
+			if (sc != null)
+				sc.close();
+
 			System.out.println("Finally block executed");
 		}
 	}
-
 }
