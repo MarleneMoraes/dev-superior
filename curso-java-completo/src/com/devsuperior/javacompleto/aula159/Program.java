@@ -1,4 +1,4 @@
-package com.devsuperior.javacompleto.aula218.application;
+package com.devsuperior.javacompleto.aula159;
 
 import java.io.File;
 import java.util.Scanner;
@@ -6,8 +6,8 @@ import java.util.Scanner;
 /**
  * 
  * @author Marlene 
- * SE��O 17: Trabalhando com arquivos 
- * AULA 218. Manipulando pastas com File
+ * SECAO 15: Trabalhando com arquivos 
+ * AULA 159. Manipulando pastas com File
  */
 
 public class Program {
@@ -18,12 +18,10 @@ public class Program {
 		String stringPath = scan.nextLine();
 
 		File path = new File(stringPath);
-
+		
 		// listar apenas as pastas
-
 		File[] folders = path.listFiles(File::isDirectory);
 		System.out.println("Folders: ");
-
 		for (File folder : folders) {
 			System.out.println(folder);
 		}
@@ -35,13 +33,11 @@ public class Program {
 		for (File file : files) {
 			System.out.println(file);
 		}
-
-		
-		//criar uma subpasta da pasta temp
+	
+		// criar uma subpasta da pasta temp
 		boolean success = new File(stringPath + "\\subdir").mkdir(); 
 		System.out.println("Directory created successfully: " + success);
 		
 		scan.close();
 	}
-
 }

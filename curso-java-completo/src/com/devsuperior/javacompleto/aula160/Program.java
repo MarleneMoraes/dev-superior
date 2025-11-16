@@ -1,4 +1,4 @@
-package com.devsuperior.javacompleto.aula219.application;
+package com.devsuperior.javacompleto.aula160;
 
 import java.io.File;
 import java.util.Scanner;
@@ -6,8 +6,8 @@ import java.util.Scanner;
 /**
  * 
  * @author Marlene 
- * SE��O 17: Trabalhando com arquivos 
- * AULA 219. Informacoes do caminho do arquivo
+ * SECAO 15: Trabalhando com arquivos 
+ * AULA 160. Informacoes do caminho do arquivo
  */
 
 public class Program {
@@ -19,13 +19,13 @@ public class Program {
 		
 		File path = new File(stringPath);
 		
-		//Imprime somente o nome do arquivo
+		// imprime somente o nome do arquivo
 		System.out.println("getName: " + path.getName());
 		
-		//Imprime o caminho do arquivo
+		// imprime somente o caminho do arquivo
 		System.out.println("getParent: " + path.getParent());
 		
-		//Imprime todo o caminho getName + getParent
+		// imprime todo o caminho (getName + getParent)
 		System.out.println("getPath: " + path.getPath());
 		
 		scan.close();

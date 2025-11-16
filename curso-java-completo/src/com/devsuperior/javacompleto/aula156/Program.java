@@ -1,15 +1,15 @@
-package com.devsuperior.javacompleto.aula215.application;
-
-/**
- * 
- * @author Marlene
- * SE��O 17: Trabalhando com arquivos
- * AULA 215. FileReader e BufferedReader
- */
+package com.devsuperior.javacompleto.aula156;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+
+/**
+ * 
+ * @author Marlene
+ * SECAO 15: Trabalhando com arquivos
+ * AULA 156. FileReader e BufferedReader
+ */
 
 public class Program {
 	public static void main(String[] args) {
@@ -42,7 +42,7 @@ public class Program {
 				if (fr != null) {
 					fr.close();
 				}
-			} catch (IOException e) {
+			} catch (IOException e) { // pode acontecer o fechamento de streams
 				e.printStackTrace();
 			}
 		}
