@@ -4,16 +4,8 @@ import java.util.Scanner;
 
 /**
  * @author Marlene 
- * SEÇÃO 10: Comportamento de Memoria, arrays, listas 
- * AULA 103. Exercicio proposto
- */
-
-/*
- * Fazer um programa para ler dois n�meros inteiros M e N, e depois ler
- * uma matriz de M linhas por N colunas contendo n�meros inteiros,
- * podendo haver repeti��es. Em seguida, ler um n�mero inteiro X que
- * pertence � matriz. Para cada ocorr�ncia de X, mostrar os valores �
- * esquerda, acima, � direita e abaixo de X, quando houver.
+ * SECAO 10: Comportamento de Memoria, arrays, listas 
+ * AULA 103. Exercicio resolvido
  */
 
 public class Program {
@@ -22,35 +14,28 @@ public class Program {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.print("Quantidade de linhas: ");
-		int M = scan.nextInt();
+		int n = scan.nextInt();
+		int[][] matriz = new int[n][n]; 
+		int count = 0;
 		
-		System.out.println("Quantidade de colunas: ");
-		int N = scan.nextInt();
-		
-		int[][] matriz = new int[M][N];
-		
-		for (int i = 0; i < M; i++) {
-			for (int j = 0; j < N; j++) {
+		for (int i=0; i<n; i++) {
+			for (int j = 0; j < n; j++) {
 				matriz[i][j] = scan.nextInt();
-			}
-		}
-		
-		System.out.print("Valor : ");
-		int X = scan.nextInt();
-		
-		for(int i = 0; i < M; i++) {
-			for (int j = 0; j < N; j++) {
-				if(X == matriz[i][j]) {
-					System.out.println("--------------------");
-					System.out.printf("Position %d, %d", i,j);
-					
-					if(i >= 0 && i < M) {
-						
-					}
+				
+				if(matriz[i][j] < 0) {
+					count++;
 				}
 			}
 		}
+		
+		System.out.println("Main diagonal: ");
+		for(int i = 0; i < n; i++) {
+			System.out.print(matriz[i][i] + " ");
+		}
+		
+		System.out.println();
+		System.out.println("Negative numbers: " + count);
+		
 		
 		scan.close();
 	}

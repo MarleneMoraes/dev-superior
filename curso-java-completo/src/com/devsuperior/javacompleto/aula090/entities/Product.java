@@ -1,4 +1,4 @@
-package com.devsuperior.javacompleto.aula089.entities;
+package com.devsuperior.javacompleto.aula090.entities;
 
 public class Product {
 	

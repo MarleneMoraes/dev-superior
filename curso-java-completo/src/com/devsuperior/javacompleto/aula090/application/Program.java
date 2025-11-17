@@ -1,15 +1,15 @@
-package com.devsuperior.javacompleto.aula089.application;
+package com.devsuperior.javacompleto.aula090.application;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-import com.devsuperior.javacompleto.aula089.entities.Product;
+import com.devsuperior.javacompleto.aula090.entities.Product;
 
 /**
  * 
  * @author Marlene 
- * SE��O 10: Comportamento de Mem�ria, arrays, listas 
- * AULA 89.Vetores - Parte 2
+ * SECAO 10: Comportamento de Memoria, arrays, listas 
+ * AULA 90.Vetores - Parte 2
  */
 
 public class Program {
