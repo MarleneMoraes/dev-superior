@@ -18,7 +18,7 @@ O repositório é composto do curso "Java COMPLETO Programação Orientada a Obj
 - [x] Seção 13: Herança e Polimorfismo
 - [x] Seção 14: Tratamento de Exceções
 - [x] Seção 15: Trabalhando com Arquivos
-- [ ] Seção 16: Interfaces
+- [x] Seção 16: Interfaces
 - [ ] Seção 17: Generics, Set, Map
 - [ ] Seção 18: Programação Funcional e Expressões Lambda
 
