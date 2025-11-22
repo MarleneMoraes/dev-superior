@@ -20,6 +20,6 @@ O repositório é composto do curso "Java COMPLETO Programação Orientada a Obj
 - [x] Seção 15: Trabalhando com Arquivos
 - [x] Seção 16: Interfaces
 - [x] Seção 17: Generics, Set, Map
-- [ ] Seção 18: Programação Funcional e Expressões Lambda
+- [x] Seção 18: Programação Funcional e Expressões Lambda
 
 ⚠️ Seções bônus (nivelamentos e projetos), estão fora deste diretório: cada nivelamento e projeto tem o seu diretório próprio
