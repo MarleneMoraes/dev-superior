@@ -8,7 +8,7 @@ O repositório é composto de cursos, nivelamentos e projetos realizados pela es
 - [ ] Microsserviços Java com Spring Boot e Spring Cloud [09 horas]
 
 ### Nivelamentos
-- [x] Java EE - Mapeamento objeto-relacional com JPA/Hibernate (`aula-jpa`)
+- [x] Java EE - Mapeamento objeto-relacional com JPA/Hibernate (`nivelamento-jpa-hibernate`)
 - [ ] Maven
 - [ ] Álgebra Relacional e SQL
 - [ ] NoSQL e MongoDB
