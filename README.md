@@ -9,7 +9,7 @@ O repositório é composto de cursos, nivelamentos e projetos realizados pela es
 
 ### Nivelamentos
 - [x] Java EE - Mapeamento objeto-relacional com JPA/Hibernate (`nivelamento-jpa-hibernate`)
-- [ ] Maven
+- [x] Maven (`nivelamento-jpa-maven`)
 - [ ] Álgebra Relacional e SQL
 - [ ] NoSQL e MongoDB
 
