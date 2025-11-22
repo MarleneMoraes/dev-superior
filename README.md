@@ -1,22 +1,20 @@
 # DevSuperior
 
-O repositório é composto do curso "Java COMPLETO Programação Orientada a Objetos", nivelamentos e projetos realizados pela escola **DevSuperior**, do prof. Dr. Nelio Alves.
-
-## Tecnologias utilizadas
-### Back-end
-- Java
-- Spring Boot
-- Maven
-
-### Banco de Dados
-- JPA/Hibernate
-- H2
-- Postgresql
+O repositório é composto de cursos, nivelamentos e projetos realizados pela escola **DevSuperior**, do prof. Dr. Nelio Alves.
 
 ## Conteúdo 
-- Java COMPLETO Programação Orientada a Objetos (`curso-java-completo`)
-- Nivelamento: Java EE - Mapeamento objeto-relacional com JPA/Hibernate (`aula-jpa`)
-- Projeto: Web services com SpringBoot e JPA/Hibernate (`order-product`)
+### Cursos
+- [x] Java COMPLETO Programação Orientada a Objetos [54 horas] (`curso-java-completo`)
+- [ ] Microsserviços Java com Spring Boot e Spring Cloud [09 horas]
 
-# Author
-[Marlene Moraes](https://www.linkedin.com/in/marlenemoraes/)
+### Nivelamentos
+- [x] Java EE - Mapeamento objeto-relacional com JPA/Hibernate (`aula-jpa`)
+- [ ] Maven
+- [ ] Álgebra Relacional e SQL
+- [ ] NoSQL e MongoDB
+
+### Projetos
+- [ ] Sistema Jogo de Xadrez
+- [ ] Interface Gráfica com JavaFX (Java 11)
+
+> Status do projeto: Em Andamento :pencil:
