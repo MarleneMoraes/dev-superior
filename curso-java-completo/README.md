@@ -8,7 +8,7 @@ O repositório é composto do curso "Java COMPLETO Programação Orientada a Obj
 - [x] Seção 3: Introdução à Linguagem Java
 - [x] Seção 4: Estrutura Sequencial
 - [x] Seção 5: Estrutura Condicional   
-- [x] Seção 6: Estruturas Repititivas
+- [x] Seção 6: Estruturas Repetitivas
 - [x] Seção 7: Outros Tópicos Básicos Sobre Java 
 - [x] Seção 8: Introdução à Programação Orientada a Objetos
 - [x] Seção 9: Construtores, Palavra this, Sobrecarga, Encapsulamento
@@ -23,3 +23,5 @@ O repositório é composto do curso "Java COMPLETO Programação Orientada a Obj
 - [x] Seção 18: Programação Funcional e Expressões Lambda
 
 ⚠️ Seções bônus (nivelamentos e projetos), estão fora deste diretório: cada nivelamento e projeto tem o seu diretório próprio
+
+> Status do projeto: Concluído :heavy_check_mark:
